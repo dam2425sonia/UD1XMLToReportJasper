@@ -20,7 +20,8 @@ public class Main {
 
             // Convertir a ByteArrayInputStream para evitar ClassCastException
             byte[] xmlBytes = xmlInput.readAllBytes();
-            JRXmlDataSource xmlDataSource = new JRXmlDataSource(new ByteArrayInputStream(xmlBytes), "/personas/persona");
+            JRXmlDataSource xmlDataSource = new JRXmlDataSource(new ByteArrayInputStream(xmlBytes), "/personas/persona"); 
+            // "/personas/persona" es una expresión XPath que indica la ruta dentro del XML donde están los registros.
 
             // Compilar reporte
             InputStream jrxmlInput = Main.class.getResourceAsStream("/reporte.jrxml");
