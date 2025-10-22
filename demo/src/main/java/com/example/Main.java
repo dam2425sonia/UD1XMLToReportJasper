@@ -24,7 +24,7 @@ public class Main {
             // "/personas/persona" es una expresión XPath que indica la ruta dentro del XML donde están los registros.
 
             // Compilar reporte
-            InputStream jrxmlInput = Main.class.getResourceAsStream("/reporte.jrxml");
+            InputStream jrxmlInput = Main.class.getResourceAsStream("/Coffee_3.jrxml");
             JasperReport jasperReport = JasperCompileManager.compileReport(jrxmlInput);
 
             // Llenar reporte
