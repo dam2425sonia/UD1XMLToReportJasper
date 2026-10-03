@@ -34,9 +34,10 @@ public class Main {
             JasperExportManager.exportReportToPdfFile(jasperPrint, "reporte_personas.pdf");
 
             // Exportar HTML
-            JasperExportManager.exportReportToHtmlFile(jasperPrint, "reporte_personas.html");
+            //JasperExportManager.exportReportToHtmlFile(jasperPrint, "reporte_personas.html");
 
             // Exportar XLSX
+            /*
             JRXlsxExporter exporter = new JRXlsxExporter();
             exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
             exporter.setExporterOutput(new SimpleOutputStreamExporterOutput("reporte_personas.xlsx"));
@@ -44,7 +45,7 @@ public class Main {
             configuration.setOnePagePerSheet(false);
             exporter.setConfiguration(configuration);
             exporter.exportReport();
-
+            */
             System.out.println("Reportes generados correctamente!");
 
         } catch (Exception e) {
